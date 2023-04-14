@@ -58,9 +58,9 @@ function evenAndOdd(num) {
         for(let i = 0 ; i < numStr.length; i++) {
             number = parseInt(numStr[i]);
         if(number % 2 == 0) {
-            counterEven = counterEven + 1;
+            counterEven++;
         } else {
-            counterOdd = counterOdd + 1;
+            counterOdd++;
         }
     }
     return  counterEven + ' skaiciai lyginiai, ' + counterOdd + ' nelyginiai'; 
