@@ -98,4 +98,36 @@ console.clear();
 
 
 //Uzduotis #7:
-// console.log("Uzduotis #7:")
+console.log("Uzduotis #7:")
+function litai(suma){
+    let penki = 0;
+    let du = 0;
+    let vienas = 0;
+
+    penki = Math.floor(suma / 5);
+
+    if(suma - (penki * 5) > 0) {
+        tarpinis = suma - (penki*5);
+        du = Math.floor(tarpinis / 2);
+        if(tarpinis - (du *2) > 0) {
+            vienas = tarpinis-du;
+        }
+    }
+
+
+
+    //  if(suma - (penki * 5) > 0) {
+    //     tarpinis = suma - (penki*5);
+    //     du = Math.floor(tarpinis / 2);
+    //     if(tarpinis - (du *2) > 0) {
+    //         vienas = tarpinis-du;
+    //     }
+    // }
+
+    return penki + du + vienas;
+
+
+
+
+}
+console.log(litai(58));
