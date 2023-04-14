@@ -78,19 +78,24 @@ function plyteles(ilgis, plotis){
     return (pakuotes * 23) + ' eur';
 }
 console.log(plyteles(5,5));
+console.clear();
 
 //Uzduotis #6:
 console.log("Uzduotis #6:")
 
-function randomMasyvas() {
+function randomMasyvoVidurkiai() {
     let arr = [];
-    while(arr.length < 11) {
-        arr.push(Math.round(Math.random()*11))
+    while(arr.length < 30) {
+        arr.push(Math.floor(Math.random()*11))
     }
-    return arr;
+    // sortedArray = arr.sort(function(a,b){return a-b});
+    sortedArray = arr.sort((a,b) => a-b); //su arrow 
+    return 'Maziausias: ' + sortedArray[0] + '\n' + 'Didziausias: ' + sortedArray[sortedArray.length-1];
 }
 
-console.log(randomMasyvas());
+console.log(randomMasyvoVidurkiai());
+console.clear();
+
 
 //Uzduotis #7:
 // console.log("Uzduotis #7:")
