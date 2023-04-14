@@ -51,7 +51,23 @@ console.clear();
 
 //Uzduotis #4:
 console.log("Uzduotis #4:")
+function evenAndOdd(num) {
+    let counterEven = 0;
+    let counterOdd = 0;
+    let numStr = num.toString();
+        for(let i = 0 ; i < numStr.length; i++) {
+            number = parseInt(numStr[i]);
+        if(number % 2 == 0) {
+            counterEven = counterEven + 1;
+        } else {
+            counterOdd = counterOdd + 1;
+        }
+    }
+    return  counterEven + ' skaiciai lyginiai, ' + counterOdd + ' nelyginiai'; 
+}
 
+console.log(evenAndOdd(63258));
+console.clear();
 
 //Uzduotis #5:
 // console.log("Uzduotis #5:")
