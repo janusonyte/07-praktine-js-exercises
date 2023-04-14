@@ -57,7 +57,7 @@ function evenAndOdd(num) {
     let numStr = num.toString();
         for(let i = 0 ; i < numStr.length; i++) {
             number = parseInt(numStr[i]);
-        if(number % 2 == 0) {
+        if(number % 2 === 0) {
             counterEven++;
         } else {
             counterOdd++;
@@ -70,12 +70,27 @@ console.log(evenAndOdd(63258));
 console.clear();
 
 //Uzduotis #5:
-// console.log("Uzduotis #5:")
+console.log("Uzduotis #5:")
 
+function plyteles(ilgis, plotis){
+    let kvadratura = (ilgis * plotis) + ((ilgis*plotis/100))*5;
+    let pakuotes = Math.ceil(kvadratura / 1.5);
+    return (pakuotes * 23) + ' eur';
+}
+console.log(plyteles(5,5));
 
 //Uzduotis #6:
-// console.log("Uzduotis #6:")
+console.log("Uzduotis #6:")
 
+function randomMasyvas() {
+    let arr = [];
+    while(arr.length < 11) {
+        arr.push(Math.round(Math.random()*11))
+    }
+    return arr;
+}
+
+console.log(randomMasyvas());
 
 //Uzduotis #7:
 // console.log("Uzduotis #7:")
