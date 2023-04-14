@@ -106,28 +106,16 @@ function litai(suma){
 
     penki = Math.floor(suma / 5);
 
-    if(suma - (penki * 5) > 0) {
-        tarpinis = suma - (penki*5);
-        du = Math.floor(tarpinis / 2);
-        if(tarpinis - (du *2) > 0) {
-            vienas = tarpinis-du;
+     if(suma - (penki * 5) > 0) {
+        tarpinis = suma - (penki*5); // kiek liko isdalinus po 5
+        du = Math.floor(tarpinis / 2); 
+        antrasTarpinis = tarpinis - (du * 2); //kiek liko isdalinus po 5 ir po 2
+        if(antrasTarpinis > 0) {
+            vienas = antrasTarpinis;
         }
     }
 
-
-
-    //  if(suma - (penki * 5) > 0) {
-    //     tarpinis = suma - (penki*5);
-    //     du = Math.floor(tarpinis / 2);
-    //     if(tarpinis - (du *2) > 0) {
-    //         vienas = tarpinis-du;
-    //     }
-    // }
-
-    return penki + du + vienas;
-
-
-
+    return `Suma: ` + suma + `lt` +  `\n`  + 'Mums reikes: ' + `\n` + penki + ` 5lt monetu, `+ `\n` + du + ` 2lt monetu, ` + `\n` + vienas + ` 1lt monetu, `;
 
 }
-console.log(litai(58));
+console.log(litai(8));
